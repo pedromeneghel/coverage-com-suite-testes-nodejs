@@ -1,0 +1,20 @@
+{
+  "name": "coverage-with-native-node-js-tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test",
+    "coverage": "NODE_V8_COVERAGE=coverage node --experimental-test-coverage --test",
+    "coverage:c8": "c8 --reporter=text --reporter=html node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "c8": "^10.1.3"
+  }
+}
